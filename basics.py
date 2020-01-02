@@ -1,8 +1,10 @@
-import datetime
+x = 10
+y = "10"
+z = 10.1
 
-mytimenow = datetime.datetime.now()
-print(mytimenow)
+sum1 = x + x
+sum2 = y + y
 
-mynumber = 10
-mytext ="Hello"
-print(mynumber, mytext)
+print(sum1, sum2)
+print(type(x), type(y), type(z))
+
