@@ -1,10 +1,7 @@
-x = 10
-y = "10"
-z = 10.1
+student_grades = [9.1, 8.8, 7.5]
 
-sum1 = x + x
-sum2 = y + y
+mysum = sum(student_grades)
+length = len(student_grades)
 
-print(sum1, sum2)
-print(type(x), type(y), type(z))
-
+mean = mysum / length
+print(mean)
