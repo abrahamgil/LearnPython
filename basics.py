@@ -1,10 +1,6 @@
-monday_temperatures = (1,4,5)
-student_grades = {"Marry": 9.1, "Sim": 8.8, "John": 7.5}
+def mean(mylist):
+    the_mean = sum(mylist) / len(mylist)
+    return the_mean
 
-mysum = sum(student_grades.values())
-length = len(student_grades)
 
-mean = mysum / length
-print(mean)
-
-print(monday_temperatures)
+print(mean([1, 4, 6]))
