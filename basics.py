@@ -1,5 +1,5 @@
 def mean(value):
-    if type(value) == dict:
+    if isinstance(value, dict):
         the_mean = sum(value.values()) / len(value)
     else:
         the_mean = sum(value) / len(value)
