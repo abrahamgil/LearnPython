@@ -1,11 +1,9 @@
-def mean(value):
-    if isinstance(value, dict):
-        the_mean = sum(value.values()) / len(value)
+def weather_condition(temperature):
+    if temperature > 7:
+        return "Warm"
     else:
-        the_mean = sum(value) / len(value)
+        return "Cold"
 
-    return the_mean
+user_input = float(input("Enter temperature: "))
 
-monday_temperatures = [8.8, 9.1, 9.9]
-student_grades = {"Marry": 9.1, "Sim": 8.8, "John": 7.5}
-print(mean(monday_temperatures))
+print(weather_condition(user_input))
