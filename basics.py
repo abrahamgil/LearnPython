@@ -1,7 +1,4 @@
-monday_temperatures = [9.1, 8.8, 7.6]
+student_grades = {"Marry": 9.1, "Sim": 8.8, "John": 7.5}
 
-for temperature in monday_temperatures:
-    print(round(temperature))
-
-for letter in 'hello':
-    print(letter.title())
+for grades in student_grades.values():
+    print(grades)
