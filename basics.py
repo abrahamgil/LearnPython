@@ -1,4 +1,5 @@
-student_grades = {"Marry": 9.1, "Sim": 8.8, "John": 7.5}
+a = 3
 
-for grades in student_grades.values():
-    print(grades)
+while a > 0:
+    print(a)
+    a = a -1
