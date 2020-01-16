@@ -5,12 +5,14 @@
 
 
 def saysomething():
-    i = 1
-    final_statement = [0,1,2,3,4,5,6,7,8,9]
+    i = 0
+    final_statement = [None]*100
     while True:
         
         user_input = input("Say something: ")
         if user_input == "\end":
+            statementCleanUp(final_statement)
+            return final_statement
             break
         else:
             final_statement[i] = user_input
@@ -19,10 +21,10 @@ def saysomething():
             continue
         
         
-
-        
+      
 
 def statementCleanUp(stuff):
+    
     return stuff
 
-saysomething()
+print(saysomething())
