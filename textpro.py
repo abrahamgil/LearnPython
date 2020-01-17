@@ -24,7 +24,11 @@ def saysomething():
       
 
 def statementCleanUp(stuff):
-    
+    for i in stuff:
+        print(i)
+        isupper.i()
+        print(i)
+
     return stuff
 
 print(saysomething())
