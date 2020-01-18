@@ -3,7 +3,7 @@
 #         until user ends with /end. After the sentences are formatted to for a 
 #         clean output
 
-
+""" My Original Attempt
 def saysomething():
     i = 0
     final_statement = [None]*100
@@ -32,3 +32,14 @@ def statementCleanUp(stuff):
     return stuff
 
 print(saysomething())
+
+"""
+def sentence_maker(phrase):
+    interrogatives = ("how", "what", "why")
+    capitalized = phrase.capitalize()
+    if phrase.startswith(interrogatives):
+        return "{}?".format(capitalized)
+    else:
+        return "{}.".format(capitalized)
+
+print(sentence_maker("how are you"))
