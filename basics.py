@@ -1,4 +1,5 @@
-def area(a, b):
-    return a * b
+def mean(*args):
+    return sum(args) / len(args)
 
-print(area(4,5))
+
+print((mean(1,3,4)))
