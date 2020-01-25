@@ -1,2 +1,5 @@
 myfile = open("fruits.txt")
-print(myfile.read())
+content = myfile.read()
+myfile.close()
+
+print(content)
