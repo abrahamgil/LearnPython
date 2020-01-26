@@ -1,4 +1,6 @@
-with open("files/vegetables.txt", "w") as myfile:
-    myfile.write("Tomato\nCucumber\nOnion\n")
-    myfile.write("Garlic")
+with open("files/vegetables.txt", "a+") as myfile:
+    myfile.write("\nOkra")
+    myfile.seek(0)
+    content = myfile.read()
 
+print(content)
