@@ -1,6 +1,6 @@
-with open("files/vegetables.txt", "a+") as myfile:
-    myfile.write("\nOkra")
-    myfile.seek(0)
-    content = myfile.read()
+import time
 
-print(content)
+while True:
+    with open("files/vegetables.txt") as file:
+        print(file.read())
+        time.sleep(10)
